@@ -1,4 +1,5 @@
 """
+
 Tinker 1B, Part 1: write an assert-based pytest test for session_rating()
 BEFORE you touch anything else. One test is started for you -- add at least
 one more.
@@ -13,3 +14,5 @@ def test_session_rating_boundary_90_is_great():
 
 # TODO: add at least one more test, e.g. a boundary case for "Skip" (a score
 # of 59) or the exact boundary for "Good" (a score of 80).
+def test_session_rating_boundary_59_is_good():
+    assert session_rating(59) == "Good"
